@@ -69,7 +69,7 @@ class NeuralNetwork:
         return loss, correct
 
     def train(self, train_data, val_data, epochs=5, shuffle=True):
-        state = [self.model.state, self.optimizer.state]
+        state = [self.model.state, self.optimizer.state, mx.random.state]
 
         @partial(mx.compile, inputs=state, outputs=state)
         def step(X, T):
