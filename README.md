@@ -15,7 +15,7 @@ We define modular arithmetic for the following operations given a prime modulus 
 - **Addition**: $a \circ b = a + b \mod p$
 - **Subtraction**: $a \circ b = a - b \mod p$
 - **Multiplication**: $a \circ b = a \cdot b \mod p$
-- **Division**: $a \circ b = a / b \mod p$, using Fermat’s Little Theorem given by $a \cdot b^{p-2} \mod p$
+- **Division**: $a \circ b = a / b \mod p$, using Fermat’s Little Theorem which states that $b^{p-1} \equiv 1 \mod p$ for any $b$ not divisible by $p$.
 
 ## Running
 
