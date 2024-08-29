@@ -1,7 +1,11 @@
 # Grokking Modular Arithmetic (MLX)
 
 <p align="center">
-  <img src="media/grokking.png" alt="Grokking" width="50%">
+  <img src="media/grokking_white_spines.png#gh-dark-mode-only" alt="Grokking" width="50%">
+</p>
+
+<p align="center">
+  <img src="media/grokking_black_spines.png#gh-light-mode-only" alt="Grokking" width="50%">
 </p>
 
 _Grokking_: a phenomenon observed in neural nets, where after an initial phase of overfitting (or memorization), the model suddenly achieves perfect generalization, inspired by [Power et al. (2022)](https://arxiv.org/abs/2201.02177). We incoporate some modern Transformer tricks (e.g., RoPE, RMSNorm, SiLU, etc.) and achieve grokking in $\lt$ 150 epochs on modular division when $p=97$ on 50% of the training data using a 2 layer, 1 head, 128 dim net.
