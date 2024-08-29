@@ -156,13 +156,13 @@ def main(args):
     # !plotting
     fig, ax = plt.subplots(figsize=(5, 3.5))
     lw = 2
-    ax.plot(net.train_acc_trace, label='train', color='#1b9e77', lw=lw)
-    ax.plot(net.val_acc_trace, label='val', color='#d95f02', lw=lw)
+    ax.plot(net.train_acc_trace * 100, label='train', color='#1b9e77', lw=lw)
+    ax.plot(net.val_acc_trace * 100, label='val', color='#d95f02', lw=lw)
     ax.set_xlabel('Epoch')
     ax.set_ylabel('Accuracy (%)')
     ax.legend()
     fig.tight_layout()
-    fig.savefig('media/grokking.png', dpi=300, transparent=True)
+    fig.savefig('media/grokking.png', dpi=300)
     plt.show()
 
 
