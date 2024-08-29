@@ -111,6 +111,7 @@ class NeuralNetwork:
             epoch_bar.set_postfix(postfix)
 
     def evaluate(self, test_data):
+        self.model.eval()
         total_loss, total_correct = 0, 0
         for X, T in self._make_batches(*test_data):
             Y = self.model(X)
