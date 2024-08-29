@@ -162,7 +162,7 @@ def main(args):
     ax.set_ylabel('Accuracy (%)')
     ax.legend()
     fig.tight_layout()
-    fig.savefig('grokking.png', dpi=300, transparent=True)
+    fig.savefig('media/grokking.png', dpi=300, transparent=True)
     plt.show()
 
 
