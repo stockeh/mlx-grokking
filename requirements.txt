@@ -1,0 +1,5 @@
+matplotlib==3.8.0
+mlx==0.17.1
+mlx_data==0.0.2
+numpy==2.1.0
+tqdm==4.66.4
